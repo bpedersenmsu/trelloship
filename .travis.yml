@@ -11,6 +11,7 @@ install:
 
 script:
   - coverage run --omit=*test* -m unittest
+  - coverage xml -i
   
 after_success:
   - codecov
